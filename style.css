@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff66b3;
+}
+
+.cake-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cake {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tier {
+    width: 200px;
+    height: 60px;
+    background: #ffd1dc;
+    border-radius: 10px;
+    border: 3px solid #f5c6d6;
+    margin-bottom: 10px;
+}
+
+.tier-middle {
+    width: 150px;
+}
+
+.tier-top {
+    width: 100px;
+}
+
+.teddy-bear {
+    position: absolute;
+    top: -120px;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ear {
+    width: 20px;
+    height: 20px;
+    background: #b5651d;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.ear.left {
+    left: -15px;
+}
+
+.ear.right {
+    right: -15px;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    background: #b5651d;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.eyes {
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    box-shadow: 20px 0 black;
+}
+
+.nose {
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 17px;
+}
+
+.body {
+    width: 50px;
+    height: 60px;
+    background: #b5651d;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.arms {
+    width: 60px;
+    height: 20px;
+    background: #b5651d;
+    border-radius: 20px;
+    margin-top: -10px;
+}
